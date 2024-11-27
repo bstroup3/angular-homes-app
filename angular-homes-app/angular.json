@@ -55,12 +55,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "angular-homes-app:build"
+          },
           "configurations": {
             "production": {
-              "browserTarget": "angular.io-example:build:production"
+              "buildTarget": "angular-homes-app:build:production"
             },
             "development": {
-              "browserTarget": "angular.io-example:build:development"
+              "buildTarget": "angular-homes-app:build:development"
             }
           },
           "defaultConfiguration": "development"
